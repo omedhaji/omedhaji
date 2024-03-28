@@ -4,7 +4,10 @@ import laravel from 'laravel-vite-plugin';
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/scss/app.scss', 'resources/js/app.js'],
+            input: [
+                'resources/css/app.css',
+                'resources/js/app.js',
+            ],
             refresh: true,
         }),
     ],
@@ -15,5 +18,5 @@ export default defineConfig({
         watch: {
             usePolling: true,
         }
-    },
+    }, 
 });
